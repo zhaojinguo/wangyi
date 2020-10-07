@@ -1,0 +1,2491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易严选 - 以严谨的态度，为中国消费者甄选天下优品</title>
+	<link rel="stylesheet" href="http:////at.alicdn.com/t/font_1989670_zmayg2s5cx.css">
+	<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		html,body,.main{
+			width: 100%;
+			height: 100%;
+			color: #333;
+			font-size: 12px;
+			/*overflow: hidden;*/
+
+		}
+		ul{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+			color: #ededed;
+		}
+		
+		.wrapper{
+			margin: 0 auto;
+		}
+		
+		.top{
+			width: 100%;
+			height: 36px;
+			background-color: #333;
+			
+		}
+		.top > .wrapper{
+			width: 1090px;
+			margin: 0 auto;
+			line-height: 36px;
+		}
+		/* 顶部清除浮动 */
+		.top > .wrapper::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.top .left{
+			cursor: pointer;
+			width: 254px;
+			height: 36px;
+			float: left;
+			color: #CC9756;
+			font-size: 12px;
+			line-height: 36px;
+			text-decoration: underline;
+		}
+		.top .left:hover{
+			color: #fff;
+			text-decoration: none;
+		}
+		.top .left i{
+			font-size: 15px;
+			color: #B4A078;
+			float: left;
+			margin-right: 10px;
+		}
+		.top .right{
+			position: relative;
+			float: right;
+		}
+		.top .right>ul::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.top .right>ul>li{
+			float: left;
+			position: relative;
+		}
+		.top .right>ul>li>a{
+			color: #ccc;
+			font-size: 12px;
+			padding: 0 1em;
+			border-right: 1px solid #ccc;
+		}
+		.top .right>ul>li:last-child>a{
+			border-right: none;
+		}
+		.top .right>ul>li>a:hover{
+			color: #fff;
+		}
+		/*第五个第六个li的悬浮以及箭头*/
+		.top .right>ul>li:nth-child(5) a i,.top .right>ul>li:nth-child(6) a i{
+			background-image: url(images/精灵图.png);
+			background-position: 0 -690px;
+    		height: 5px;
+    		width: 11px;
+    		display: inline-block;
+    		overflow: hidden;
+    		font-size: 12px;
+    		margin-left: 10px;
+    		transform: rotate(180deg);
+		}
+		/*第五个第六个下方浮动框*/
+		.top .right>ul>li:nth-child(5):hover>ul{
+			display: block;
+			/*background-color: black;*/
+		}
+		.top .right>ul>li:nth-child(6):hover>ul {
+			display: block;
+			/*background-color: pink;*/
+		}  
+		.top .right>ul>li:nth-child(5)>ul,.top .right>ul>li:nth-child(6)>ul{
+			width: 80px;
+			border:1px solid #eee;
+			background-color: #fff;
+			display: none;
+			text-align: center;
+			position: absolute;
+			z-index:6;
+		}
+		.top .right>ul>li:nth-child(5)>ul>li,.top .right>ul>li:nth-child(6)>ul>li{
+			font-size: 12px;
+			color: #282923;
+
+		}
+		/*App手机*/
+
+		.phone{
+			background-image: url(images/精灵图.png);
+			background-position: 0 0;
+		    height: 11px;
+		    width: 7px;
+		    margin-right: 6px;
+		    /*float: left;*/
+		   line-height: 7px;
+		   display: inline-block;
+		   margin-left: 5px;
+		}
+		
+
+		.header{
+			width: 100%;
+			height: 140px;
+			position: relative;
+			/*background-color: pink;*/
+		}
+		.header_top{
+			width: 1090px;
+			height: 60%;
+			/*background-color: red;*/
+			margin: 0 auto;
+			position: relative;
+		}
+
+		/*导航部分样式设置*/
+		.header_top .left{
+			background-image: url(images/精灵图.png);
+			width: 212px;
+			height: 60px;
+			background-position: 0 -298px;
+			overflow: hidden;
+			position: absolute;
+			top: 24px;
+		}
+		.header_top .right{
+			position: absolute;
+		}
+		.header_top .right .search{
+			width: 442px;
+			height: 38px;
+		}
+		.header_top .right .search>i{
+			background-image: url(images/精灵图.png);
+			width: 14px;
+			height: 14px;
+			background-position: 0 -518px;
+			position: absolute;
+			left: 395px;
+			top: 37px;
+			z-index: 1;
+			padding-left: 38px;
+			float: left;
+
+		}
+		.header_top .right .search>input{
+			position: absolute;
+			top: 24px;
+			left: 380px;
+			height: 36px;
+			width: 382px;
+			line-height: 36px;
+			/*padding-bottom: 2px;*/
+			padding-left: 38px;
+			border: 1px solid #CC9756;
+			border-bottom-left-radius: 19px;
+			border-top-left-radius: 19px;
+			font-size: 14px;
+		}
+		.header_top .right .search div{
+			background-color: #CC9756;
+			color: #fff;
+			width: 90px;
+			height: 38px;
+			position: absolute;
+			top: 24px;
+			left: 802px;
+			border-bottom-right-radius: 19px;
+			border-top-right-radius: 19px;
+			cursor:pointer;
+			line-height: 38px;
+			text-align: center;
+			font-size: 16px;
+		}
+		.header_top .right .search-text{
+			width: 440px;
+			position: absolute;
+			top: 70px;
+			left: 382px;
+		}
+		.header_top .right .search-text>a{
+			color: #CC9756;
+			padding: 0 10px;
+			border-right: 1px solid #ccc;
+			font-size: 12px;
+		}
+		.header_top .right .search-text>a:last-child{
+			border: 0;
+		}
+		.header_top .right .shopcar{
+			position: absolute;
+			top: 24px;
+			left: 950px;
+			width: 130px;
+			height: 35px;
+			cursor: pointer;
+			border: 1px solid #CC9756;
+			border-radius: 19px;
+		}
+		.header_top .right .shopcar>div:first-child{
+			background-image: url(images/精灵图.png);
+			width: 18px;
+			height: 18px;
+			display: inline-block;
+			background-position: 0 -148px;
+			margin-left: 22px;
+			margin-top: 8px;
+		}
+		.header_top .right .shopcar>span{
+			color: #CC9756;
+			font-size: 14px;
+			position: absolute;
+			top: 8px;
+			left: 50px;
+		}
+		.header_top .right .shopcar>div:last-child{
+			background-image: url(images/精灵图.png);
+			height: 19px;
+			width: 19px;
+			display: inline-block;
+			background-position: 0 -51px;
+			margin-left: 60px;
+		}
+
+		/*中部导航栏*/
+		.header_bottom{
+			width: 1090px;
+			height: 30px;
+			margin: 0 auto;
+			/*background-color: teal;*/
+			/*margin-top: 20px;*/
+
+		}
+		.header_bottom .daohang{
+			position: absolute;
+    		height: 30px;
+    		/*bottom: 11px;*/
+    		width: 1090px;
+    		line-height: 30px;
+    		bottom: 0px;
+		}
+		.header_bottom ul{
+			width: 1090px;
+			height: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.header_bottom li{
+			list-style: none;
+			font-size: 14px;
+			font-weight: bold;
+			cursor: pointer;
+			text-align:center;
+
+		}
+		.header_bottom li:hover{
+			/*text-decoration: underline;*/
+			color: #CC9756;
+			border-bottom: 3px solid #CC9756;
+		}
+		/*轮播图*/
+		.image_xianshi{
+			width: 1519px;
+			height: 420px;
+			position: relative;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.image{
+			/*position: absolute;*/
+			width: 1519px;
+			height: 420px;
+			/*font-size: 0px;*/
+			/*background-color: yellow;*/
+			background-image: url(../css_day06/images/1.webp);
+			background-size: 100% 100%;
+			animation: lunbo 20s infinite;
+			background-position: center 0;
+			/*background-size: contain;	*/
+		}
+		@keyframes lunbo{
+			0%{
+				background-image: url('./images/1.webp');
+			}
+			25%{
+				background-image: url('./images/2.webp');
+
+			}
+			50%{
+				background-image: url('./images/3.webp');
+
+			}
+			75%{
+				background-image: url('./images/4.webp');
+
+			}
+			100%{
+				background-image: url('./images/1.webp');
+
+			}
+		}
+
+
+
+
+		/*底部*/
+		.footer{
+			width: 100%;
+			height: 549px;
+			/*background-color: coral;*/
+
+		}
+		
+		/*底部顶部*/
+		.footer_top::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.footer_top{
+			width: 70%;
+			height: 50%;
+			/*background-color: #ccc;*/
+			margin: auto;
+			margin-bottom: 30px;
+		}
+		.footer_top .wrapper{
+			box-sizing: border-box;
+			padding-top: 60px;
+			padding-bottom: 34px;
+		}
+		.footer_top .wrapper>div.left,
+		.footer_top .wrapper>div.middle,
+		.footer_top .wrapper>div.right{
+			border-left: 1px solid #eee;
+			width: 33%;
+			height: 204px;
+			float: left;
+
+		}
+		.footer_top .wrapper>div.left{
+			border:none;
+		}
+		.footer_top .wrapper>div.left>div{
+			text-align: center;
+			line-height: 1;
+		}
+		.footer_top .wrapper>div.left>div>h4,
+		.footer_top .wrapper .middle .middle-top>h4,
+		.footer_top .wrapper>div.right>div>h4{
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: 28px;
+			line-height: 1;
+		}
+		.footer_top .wrapper>div.left>div>a{
+			width: 80px;
+			height: 100px;
+			font-size: 14px;
+			background-color: #fff;
+			padding-top: 25px;
+			text-align: center;
+			border:1px solid #e8e8e8;
+			border-radius: 2px;
+			line-height: 26px;
+			cursor: pointer;
+			display: inline-block;
+			box-sizing: border-box;
+			color: #333;
+		}
+		.footer_top .wrapper>div.left>div>a.left-2{
+			margin-left: 29px;
+		}
+		.footer_top .wrapper>div.left>div>a.left-1>i,
+		.footer_top .wrapper>div.left>div>a.left-2>i{
+			background-image: url(images/精灵图2.webp);
+			background-position: 0 -290px;
+			background-repeat: no-repeat;
+			height: 26px;
+			width: 31px;
+			display: inline-block;
+			font-size: 12px;
+			vertical-align: top;
+		}
+		.footer_top .wrapper>div.left>div>a.left-2>i{
+			background-image: url(images/精灵图2.webp);
+			background-position: 0 -97px;
+			height: 27px;
+			width: 30px;
+		}
+		.footer_top .wrapper>div.left>div>a.left-1>div,
+		.footer_top .wrapper>div.left>div>a.left-2>div{
+			margin-top: 10px;
+			/*box-sizing: border-box;*/
+		}
+		.footer_top .wrapper .middle .middle-top,
+		.footer_top .wrapper .middle .middle-bottom{
+			padding: 0 40px;
+			text-align: center;
+			line-height: 1;
+			box-sizing: border-box;
+		}
+		.footer_top .wrapper .middle .middle-top>p{
+			text-align: left;
+			font-size: 13px;
+			line-height: 23px;
+			margin-bottom: 22px;
+			box-sizing: border-box;
+		}
+		.footer_top .wrapper .middle .middle-bottom{
+			text-align: left;
+		}
+		.footer_top .wrapper .middle .middle-bottom::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.footer_top .wrapper .middle .middle-bottom>p{
+			margin-right: 15px;
+			margin-bottom: 0;
+			font-size: 14px;
+			line-height: 32px;
+			float: left;
+			box-sizing: border-box;
+		}
+		.footer_top .wrapper .middle .middle-bottom>div{
+			float: left;
+			box-sizing: border-box;
+		}
+		.footer_top .wrapper .middle .middle-bottom>div>i:first-child,
+		.footer_top .wrapper .middle .middle-bottom>div>i:nth-child(2),
+		.footer_top .wrapper .middle .middle-bottom>div>i:last-child{
+			background-image: url(images/精灵图2.webp);
+			background-position: 0 -470px;
+			height: 32px;
+			width: 32px;
+			display: inline-block;
+			font-size: 12px;
+			box-sizing: border-box;
+			vertical-align: top;
+		}
+		.footer_top .wrapper .middle .middle-bottom>div>i:nth-child(2){
+			background-position: 0 -428px;
+			margin-left: 10px;
+		}
+		.footer_top .wrapper .middle .middle-bottom>div>i:last-child{
+			background-position: 0 -326px;
+			margin-left: 10px;
+		}
+		.footer_top .wrapper>div.right>div{
+			text-align: center;
+			box-sizing: border-box;
+		}
+		.footer_top .wrapper>div.right>div>.ma{
+			display: inline-block;
+			width: 104px;
+			height: 104px;
+			box-sizing: border-box;
+		}
+		.footer_top .wrapper>div.right>div>.ma>i{
+			display: inline-block;
+			background-image: url(images/二维码.png);
+			height: 104px;
+			width: 104px;
+			background-size: 100% 100%;
+		}
+		.footer_top .wrapper>div.right>div>div:last-child{
+			color: #b4a078;
+			font-size: 12px;
+			margin-top: 3px;
+		}	
+
+		/*底部底部*/
+		.footer_bottom{
+			width: 100%;
+			height:54%;
+			background-color: #414141;
+			box-sizing: border-box;
+			padding-top: 37px;
+		}
+		.footer_bottom .wrapper{
+			width: 1200px;
+			margin:  auto;
+			position: relative;
+		}
+		.footer_bottom .wrapper .logo{
+			padding-bottom: 30px;
+			padding-left: 17px;
+			/*box-sizing: border-box;*/
+			/*margin-left: 168.6px;
+			margin-right: 168.6px;*/
+		}
+		.footer_bottom .wrapper .logo::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.footer_bottom .wrapper .logo>li{
+			float: left;
+			box-sizing: border-box;
+		}
+		.footer_bottom .wrapper .logo>li:nth-child(2){
+			margin:0 150px;
+		}
+		.footer_bottom .wrapper .logo>li:nth-child(3){
+			margin-right: 150px;
+		}
+		.footer_bottom .wrapper .logo>li>div{
+			color: #fff;
+			font-size: 18px;
+			line-height: 51px;
+			display: inline-block;
+			vertical-align: middle;
+			box-sizing: border-box;
+		}
+		.footer_bottom .wrapper .logo>li>div::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.footer_bottom .wrapper .logo>li>div>i{
+			margin-right: 17px;
+			float: left;
+			background-image: url(images/精灵图2.webp);
+			height: 50px;
+			width: 50px;
+			font-size: 12px;
+		}
+		.footer_bottom .wrapper .logo>li:first-child>div>i{
+			background-position: 0 -134px;
+		}
+		.footer_bottom .wrapper .logo>li:nth-child(2)>div>i{
+			background-position: 0 -368px;
+		}
+		.footer_bottom .wrapper .logo>li:nth-child(3)>div>i{
+			background-position: 0 0;
+		}
+		.footer_bottom .wrapper .logo>li:last-child>div>i{
+			background-position: 0 -194px;
+		}
+		.footer_bottom .wrapper .logo>li>div>p{
+			float: left;
+		}
+		.footer_bottom .wrapper .hr{
+			height: 1px;
+		    margin-bottom: 27px;
+		    background-color: #4f4f4f;
+		    border: 0;
+		}
+		.footer_bottom .wrapper .miaoshu{
+			text-align: center;
+			color: #999;
+			position: relative;
+			box-sizing: border-box;
+		}
+		.footer_bottom .wrapper .miaoshu>div:first-child>a{
+			color: #999;
+		}
+
+		.footer_bottom .wrapper .miaoshu>div:first-child>b{
+			text-align: center;
+			margin: auto 20px;
+			color: #999;
+		}
+		.footer_bottom .wrapper .miaoshu>p:nth-child(2){
+			margin:11px 0;
+		}
+		.footer_bottom .wrapper .miaoshu>p>a{
+			color: #999;
+			margin-right: 25px;
+		}
+		.footer_bottom .wrapper .miaoshu>p>a:hover{
+			color: #fff;
+		}
+		.footer_bottom .wrapper .miaoshu>p:nth-child(3){
+			margin:11px 0;
+		}
+
+		.footer_bottom .wrapper .miaoshu p:last-child img{
+			width: 23px;
+			height: 25px;
+			margin-top: -5px;
+			
+		}
+
+
+
+
+		/*中间*/
+		.content{
+			width: 100%;
+			
+		}
+		.content > div{
+			width: 100%;
+			position: relative;
+		}
+		
+		/*第一块  新品首发*/
+		.content .content_one{
+			height: 510px;
+			position: relative;
+			margin-top: 30px;
+
+		}
+		.content .content_one .item{
+			width: 1100px;
+			margin:0 auto;
+			position: relative;
+		}
+		.content_one .item .wrapper .title
+		{
+			margin-bottom: 20px;
+		}
+		.content_one .item .wrapper .title::after
+		{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.content_one .item .wrapper .title>h3
+		{	
+			cursor: pointer;
+			display: inline-block;
+			font-size: 28px;
+			font-weight: 700;
+			float: left;
+			margin-right: 20px;
+		}
+		.content_one .item .wrapper .title>h3:hover{
+			color: #CC9756;
+		}
+		.content_one .item .wrapper .title>span:nth-child(2)
+		{
+			padding-top: 16px;
+			display: inline-block;
+			font-size: 14px;
+		}
+		.content_one .item .wrapper .title>span:nth-child(3)
+		{
+			padding-top: 16px;
+			display: inline-block;
+			font-size: 14px;
+			float: right;
+		}
+		.content_one .item .wrapper .title>span:nth-child(3)>a
+		{
+			color: #000;
+		}
+		.content_one .item .wrapper .title>span:nth-child(3)>a:hover
+		{
+			color: #CC9756;
+		}
+		.content_one .item .xinpin{
+			padding-bottom: 2em;
+			float: left;
+		}
+		.content_one .item .xinpin::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		
+
+		/*产品*/
+		.content_one .item .xinpin > li{
+			/*box-sizing: content-box;*/
+			float: left;
+			width: 265px;
+			height: 365px;
+			margin-right: 10px;
+			position: relative;
+		}
+
+		.content_one .item .xinpin > li:hover{
+			background-color:#f4f0ea; 
+		}
+   		
+		.hd{
+			width: 265px;
+			height: 265px;
+		    position: relative;
+		    margin-bottom: 8px;
+    		overflow: hidden;
+			background-color: #F4F4F4;
+			cursor: pointer;
+		}
+
+		.hd>img{
+			width: 265px;
+			height: 265px;
+			
+		}
+
+		/*8.8 宠粉节*/
+   		.hd .promoLogo{
+   			position: absolute;
+		    left: 6px;
+		    top: 6px;
+		    z-index: 3;
+   		}
+
+
+		
+		/*新品限时购*/
+		.prom{
+			text-align: left;
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 30px;
+		    background-repeat: no-repeat;
+		    padding-right: 10px;
+		    z-index: 3;
+		}
+		.prom .promtitle{
+			width: 60px;
+			/*max-width: 200px;*/
+		    height: 36px;
+		    background-repeat: no-repeat;
+		    background-size: auto 100%;
+		    background-position: right;
+		    margin-top: -6px;
+		    z-index: 1;
+		    padding-left: 8px;
+		    padding-right: 14px;
+		    float: left;
+		    border-top-left-radius: 3px;
+
+		}
+		.prom .promtitle .title_sub{
+			text-align: center;
+			height: 15px;
+		    color: #fff;
+		    overflow: hidden;
+		    font-size: 12px;
+		    line-height: 18px;
+		}
+		.prom .promtitle .subtitle {
+			width: 60px;
+			font-size: 14px;
+		    height: 20px;
+		    line-height: 20px;
+		    margin-top: -1px;
+		    font-weight: 700;
+		    text-align: center;
+		    color: #fff;
+		    overflow: hidden;
+		}
+		.prom .promtitle .subtitle .qi{
+			font-size: 12px;
+			font-weight: 400;
+			display: inline-block;
+		}	
+		.promcontent{
+			width: 169px;
+			color: #fff;
+		    text-align: left;
+		    height: 30px;
+		    line-height: 30px;
+		    font-size: 12px; 
+		    margin-left: 4px;
+		    padding-left: 4px;
+		    overflow: hidden;
+		}
+		
+		/*下方文字*/
+		.content_one .item .xinpin>div:nth-child(2){
+			height: 20px;
+			color: #fff;
+			width: 285px;
+		}
+		.content_one .item .xinpin>li>div:nth-child(2)>span{
+			display: inline-block;
+			height: 20px;
+			line-height: 20px;
+			color: #fff;
+			padding:0 5px;
+			background-color:#e36844;
+			margin-left: 98px;
+			cursor: default;
+		}
+		.content_one .item .xinpin h4{
+			width: 180px;
+			margin: 4px auto;
+			text-align: center;
+			color: #333;
+			cursor: pointer;
+			font-size: 13px;
+		}
+		.content_one .item .xinpin h4:hover{
+			color: #CC9756
+		}
+		.content_one .item .xinpin>li>p{
+			/*margin-top: 15px;*/
+			font-size: 13px;
+			line-height: 13px;
+			color: #d4282d;
+			text-align: center;
+			cursor: default;
+		}
+		.content_one .item .xinpin>li>p>span:last-child{
+			color: #999;
+			font-size: 12px;
+			text-decoration-line: line-through;
+		}
+		
+
+
+		/*悬浮更换图片*/
+		.cover{
+			width: 265px;
+			height: 265px;
+		    position: absolute;
+		    margin-bottom: 8px;
+    		/*overflow: hidden;*/
+			/*background-color: #F4F4F4;*/
+			cursor: pointer;
+			display: none;
+			left: 0px;
+			top: 0px;
+			/*transition: all 3s linear;*/
+			z-index: 2;
+			/*background-color: pink;*/
+		}
+
+		.content_one .item .xinpin >li:hover .cover{
+			/*background-color: pink;*/
+			/*transition: all 3s linear;*/
+			display: block;
+			
+		}
+
+
+
+
+
+		/*第二块 人气推荐*/
+		.content .content_two{
+			height: 618px;
+			position: relative;
+			padding: 60px 0;
+    		background: #f4f0ea;
+
+		}
+		.content .content_two .item{
+			width: 1100px;
+			margin: 0 auto;
+			position: relative;
+			/*background-color: pink;*/
+		}
+		.content_two .item .wrapper .title
+		{
+			margin-bottom: 20px;
+		}
+		.content_two .item .wrapper .title::after
+		{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.content_two .item .wrapper .title>h3
+		{	
+			cursor: pointer;
+			/*display: inline-block;*/
+			font-size: 28px;
+			font-weight: 700;
+			float: left;
+			margin-right: 20px;
+		}
+		.content_two .item .wrapper .title>h3:hover{
+			color: #CC9756;
+		}
+		.content_two .item .wrapper .title .renqi {
+			position: absolute;
+			/*margin-left: 10px;*/
+			bottom: 0px;
+			float: left;
+			left: 140px;
+		}
+		.content_two .item .wrapper .title .renqi ul{
+			
+		}
+		.content_two .item .wrapper .title .renqi ul li{
+			text-align: center;
+		    float: left;
+		    font-size: 14px;
+		    width: 70px;
+		    height: 28px;
+		    line-height: 28px;
+		    margin-right: 55px;
+		    cursor: pointer;
+		}
+		.content_two .item .wrapper .title .renqi ul li:first-child{
+			border-bottom: 2px solid #b4a078;
+			color: #BAA08A;
+		}
+		.content_two .item .wrapper .title .renqi ul li:last-child:hover{
+			color: #BAA08A;
+		}
+		.content_two .item .wrapper .title>span>a
+		{
+			padding-top: 16px;
+			/*display: inline-block;*/
+			font-size: 14px;
+			float: right;
+
+		}
+		.content_two .item .wrapper .title>span>a
+		{
+			color: #000;
+		}
+		.content_two .item .wrapper .title>span>a:hover
+		{
+			color: #CC9756;
+		}
+		.content_two .item .wrapper>div:nth-child(2){
+			position: relative;
+		}
+		.content_two .item .wrapper>div:nth-child(2)::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		
+		.kouzhao{
+			/*margin-top: 22px;	*/
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 390px;
+			height: 570px;
+			/*background-color: black;*/
+			float: left;
+			background-color: #fff;
+		}
+		
+		
+		
+
+		/*口罩*/
+		.kouzhaozhao{
+			background: 0 0;
+		    border-bottom: 1px solid #F4F0EA;
+		    margin-bottom: 18px;
+		    width: 390px;
+		    height: 400px;
+		    position: relative;
+		    overflow: hidden;
+		    background-color: #fff;
+		}
+		.kouzhaozhao .kz_image{
+			width: 320px;
+			height: 390px;
+			background-color: #fff;
+			
+		}
+		.kouzhaozhao .kz_image img{
+			width: 320px;
+			height: 320px;
+			margin: 40px 35px;
+			transition: all 2s linear;
+		}
+		.kouzhaozhao .kz_image img:hover{
+			width: 330px;
+			height:330px;
+			transition: all 2s linear;
+		}
+		.kouzhaozhao .promoLogo{
+			position: absolute;
+			left: 0px;
+			top:0px;
+		}
+
+		.kouzhaozhao_bottom{
+			background-color: #fff;
+			height: calc(100% - 421px);
+		}
+		.kouzhaozhao_bottom .xtb{
+			height: 20px;
+		    font-size: 0;
+		    color: #fff;
+		    width: 200px;
+		    margin: 0 auto 3px;
+		    overflow: hidden;
+		    margin-bottom: 10px;
+		    text-align: center;
+
+		}
+		.kouzhaozhao_bottom .xtb .bt1{
+			height: 20px;
+		    line-height: 20px;
+		    color: #fff!important;
+		    padding: 0 5px;
+		    background-color: #F28F2D;
+		    display: inline-block;
+    		font-size: 12px;
+
+		}
+		.kouzhaozhao_bottom .xtb .bt2{
+			margin-left: 6px;
+			height: 20px;
+		    line-height: 20px;
+		    color: #fff!important;
+		    padding: 0 5px;
+		    background-color: #e36844;
+		    display: inline-block;
+    		font-size: 12px;
+		}
+		.kouzhaozhao_bottom h4{
+			line-height: 26px;
+		    max-height: 52px;
+		    margin: 0 auto 13px;
+		    font-size: 18px;
+		    width: 248px;
+		    text-align: center;
+		    cursor: pointer;
+		}
+		.kouzhaozhao_bottom h4:hover{
+			color: #CC9756;
+		}
+		.kouzhaozhao_bottom p{
+			text-align: center;
+			box-sizing: border-box;
+			width: 390px;
+			height: 18px;
+			padding-top: 1px;
+			padding-bottom: 9px;
+		}
+		.kouzhaozhao_bottom p span:first-child{
+			font-size: 18px;
+    		height: 18px;
+    		line-height: 1;
+        	position: relative;
+    		top: 1px;
+    		display: inline-block;
+    		overflow: hidden;
+        	color: #d4282d;
+		}
+		.kouzhaozhao_bottom p span:last-child{
+			top: 1px;
+			font-size: 14px;
+		    height: 18px;
+		    line-height: 1;
+		    color: #999;
+		    margin-left: 6px;
+		    text-decoration: line-through;
+		}
+
+		/*人气推荐第一行*/
+		.row_one{
+			width: calc(100% - 390px);
+			height: 280px;
+			/*background-color: pink;*/
+			float: left;
+			position: absolute;
+			top: 0px;
+			left: 400px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.row_one>ul>li{
+			width: 223px;
+			height: 280px;
+			background-color: #fff;
+			/*background-color: red;*/
+			float: left;
+			margin-left: 10px;
+		}
+		.row_one_hd{
+			background: 0 0;
+		    border-bottom: 1px solid #F4F0EA;
+		    margin-bottom: 8px;
+		    width: 223px;
+		    height: 181px;
+		    position: relative;
+		    overflow: hidden;
+		    background-color: #fff;
+		}
+		.row_one_hd .li_image{
+			width: 223px;
+			height: 180px;
+			background-color: #fff;
+			
+		}
+		.row_one_hd .li_image img{
+			width: 180px;
+			height: 180px;
+			transition: all 2s linear;
+			display: block;
+    		margin: 0 auto;
+		}
+		.li_image img:hover{
+			width: 200px;
+			height:200px;
+			transition: all 2s linear;
+		}
+		.row_one_hd  .promoLogo{
+			position: absolute;
+			left: 0px;
+			top:0px;
+		}
+		.row_one_hd .promcontent{
+			width: 130px;
+			color: #fff;
+		    text-align: left;
+		    height: 30px;
+		    line-height: 30px;
+		    font-size: 12px; 
+		    margin-left: 4px;
+		    padding-left: 4px;
+		    overflow: hidden;
+		    float: left;
+		}
+		.row_one_bd{
+			background-color: #fff;
+			height: calc(100% - 201px);
+		}
+		.row_one_bd .xtb{
+			height: 20px;
+		    font-size: 0;
+		    color: #fff;
+		    width: 200px;
+		    margin: 0 auto 3px;
+		    overflow: hidden;
+		    margin-bottom: 4px;
+		    text-align: center;
+
+		}
+		.row_one_bd .xtb .bt2{
+			margin-left: 6px;
+			height: 20px;
+		    line-height: 20px;
+		    color: #fff!important;
+		    padding: 0 5px;
+		    background-color: #e36844;
+		    display: inline-block;
+    		font-size: 12px;
+		}
+		.row_one_bd h4{
+			line-height: 20px;
+		    max-height: 40px;
+		    margin: 0 auto 4px;
+		    font-size: 13px;
+		    width: 136px;
+		    text-align: center;
+		    cursor: pointer;
+		}
+		.row_one_bd h4:hover{
+			color: #CC9756;
+		}
+		.row_one_bd p{
+			text-align: center;
+			box-sizing: border-box;
+			width: 223px;
+			height: 25px;
+			padding-top: 1px;
+			padding-bottom: 9px;
+		}
+		.row_one_bd p span:first-child{
+			font-size: 13px;
+    		height: 13px;
+    		line-height: 1;
+        	position: relative;
+    		top: 1px;
+    		display: inline-block;
+    		overflow: hidden;
+        	color: #d4282d;
+		}
+		.row_one_bd p span:last-child{
+			top: 1px;
+			font-size: 12px;
+		    height: 12px;
+		    line-height: 1;
+		    color: #999;
+		    margin-left: 6px;
+		    text-decoration: line-through;
+		}
+		/*人气推荐第二行*/
+		.row_two{
+			width: calc(100% - 390px);
+			height: 280px;
+			/*background-color: pink;*/
+			float: left;
+			position: absolute;
+			top: 290px;
+			left: 400px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.row_two>ul>li{
+			width: 223px;
+			height: 280px;
+			background-color: #fff;
+			/*background-color: red;*/
+			float: left;
+			margin-left: 10px;
+		}
+		.row_two_hd{
+			background: 0 0;
+		    border-bottom: 1px solid #F4F0EA;
+		    margin-bottom: 8px;
+		    width: 223px;
+		    height: 181px;
+		    position: relative;
+		    overflow: hidden;
+		    background-color: #fff;
+		}
+		.row_two_hd .li_image{
+			width: 223px;
+			height: 180px;
+			background-color: #fff;
+			
+		}
+		.row_two_hd .li_image img{
+			width: 180px;
+			height: 180px;
+			transition: all 2s linear;
+			display: block;
+    		margin: 0 auto;
+		}
+		.li_image img:hover{
+			width: 200px;
+			height:200px;
+			transition: all 2s linear;
+		}
+		.row_two_hd  .promoLogo{
+			position: absolute;
+			left: 0px;
+			top:0px;
+		}
+		.row_two_hd .promcontent{
+			width: 130px;
+			color: #fff;
+		    text-align: left;
+		    height: 30px;
+		    line-height: 30px;
+		    font-size: 12px; 
+		    margin-left: 4px;
+		    padding-left: 4px;
+		    overflow: hidden;
+		    float: left;
+		}
+		.row_two_bd{
+			background-color: #fff;
+			height: calc(100% - 201px);
+		}
+		.row_two_bd .xtb{
+			height: 20px;
+		    font-size: 0;
+		    color: #fff;
+		    width: 200px;
+		    margin: 0 auto 3px;
+		    overflow: hidden;
+		    margin-bottom: 4px;
+		    text-align: center;
+
+		}
+		.row_two_bd .xtb .bt2{
+			margin-left: 6px;
+			height: 20px;
+		    line-height: 20px;
+		    color: #fff!important;
+		    padding: 0 5px;
+		    background-color: #e36844;
+		    display: inline-block;
+    		font-size: 12px;
+		}
+		.row_two_bd h4{
+			line-height: 20px;
+		    max-height: 40px;
+		    margin: 0 auto 4px;
+		    font-size: 13px;
+		    width: 136px;
+		    text-align: center;
+		    cursor: pointer;
+		}
+		.row_two_bd h4:hover{
+			color: #CC9756;
+		}
+		.row_two_bd p{
+			text-align: center;
+			box-sizing: border-box;
+			width: 223px;
+			height: 25px;
+			padding-top: 1px;
+			padding-bottom: 9px;
+		}
+		.row_two_bd p span:first-child{
+			font-size: 13px;
+    		height: 13px;
+    		line-height: 1;
+        	position: relative;
+    		top: 1px;
+    		display: inline-block;
+    		overflow: hidden;
+        	color: #d4282d;
+		}
+		.row_two_bd p span:last-child{
+			top: 1px;
+			font-size: 12px;
+		    height: 12px;
+		    line-height: 1;
+		    color: #999;
+		    margin-left: 6px;
+		    text-decoration: line-through;
+		}
+
+		/*第三块居家生活*/
+		.content .content_three{
+			height: 790px;
+			position: relative;
+			padding: 60px 0;
+    		/*background: #f4f0ea;*/
+			margin-bottom: 80px;
+		}
+		.content .content_three .item{
+			width: 1100px;
+			margin: 0 auto;
+			position: relative;
+			/*background-color: pink;*/
+		}
+		.content_three .item .wrapper .title
+		{
+			margin-bottom: 20px;
+		}
+		.content_three .item .wrapper .title::after
+		{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.content_three .item .wrapper .title>h3
+		{	
+			cursor: pointer;
+			/*display: inline-block;*/
+			font-size: 28px;
+			font-weight: 700;
+			float: left;
+			margin-right: 20px;
+		}
+		.content_three .item .wrapper .title>h3:hover{
+			color: #CC9756;
+		}
+		.content_three .item .wrapper .title .right{
+			float: right;
+			line-height: 1;
+		}
+		.content_three .item .wrapper .title .right .sublist{
+			display: inline-block;
+		    font-size: 14px;
+		    padding-top: 14px;
+		}
+		.content_three .item .wrapper .title .right .sublist>span>a{
+			color: #333;
+			text-decoration: none;
+		}
+		.content_three .item .wrapper .title .right .sublist>span>a:hover{
+			color: #CC9756;
+		}
+		.content_three .item .wrapper .title .right .sublist>span>b{
+			margin: 0 13px;
+			font-weight: bold;
+		}
+		.content_three .item .wrapper .title .right .title_right{
+			display: inline-block;
+		    line-height: 1;
+		    margin-left: 30px;
+		    padding-top: 14px;
+		    cursor: pointer;
+		    font-size: 14px;
+		    color: #333;
+		    text-decoration: none;
+		}
+		.content_three .item .wrapper .title .right .title_right:hover{
+			color: #CC9756;
+		}
+		.content_three .item .wrapper .content_image{
+			margin-bottom: 20px;
+			height: 310px;
+			width: 100%;
+		}
+		.content_three .item .wrapper .content_image img{
+			width: 100%;
+    		height: 310px;
+    		vertical-align: top;
+    		display: block;
+    		cursor: pointer;
+		}
+		.jj_bd{
+		    width: 1100px;
+		    overflow: hidden;
+		    height: 410px;
+		}
+		.jj_bd ul{
+			margin-right: -10px;
+			list-style: none;
+		}
+		.jj_bd ul li{
+			float: left;
+    		margin: 0 10px 50px 0;
+    		width: 265px;
+		}
+		.jj_bd ul li:hover{
+			background-color:#f4f0ea; 
+		}
+		.jj_bd ul li .jj{
+			width: 265px;
+			height: 361px;
+			line-height: 1;
+		    text-align: center;
+		    font-size: 13px;
+		    position: relative;
+		}
+		.jj_bd ul li .jj .jj_top{
+			position: relative;
+		    margin-bottom: 8px;
+		    overflow: hidden;
+		    background-color: #f4f4f4;
+		    text-align: center;
+		    font-size: 13px;
+		}
+		.jj_bd ul li .jj .jj_top a>img:first-child{
+			width: 265px;
+    		height: 265px;
+    		transition: transform 1s;
+		    background-color: #f4f4f4;
+		    color: #f4f4f4;
+		    display: block;
+		    margin: 0 auto;
+		    vertical-align: top;
+		}
+		.jj_top  .promoLogo{
+			position: absolute;
+			left: 0px;
+			top:0px;
+			z-index: 5;
+		}
+		.jj_top .promcontent{
+			width: 150px;
+			color: #fff;
+		    text-align: left;
+		    overflow: hidden;
+		    height: 30px;
+		    line-height: 30px;
+		    font-size: 12px;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    margin-left: 4px;
+		    padding-left: 4px;
+		}
+		.jj_bottom{
+			background-color: #fff;
+			height: calc(100% - 370px);
+		}
+		.jj_bottom .xtb{
+			height: 20px;
+		    font-size: 0;
+		    color: #fff;
+		    width: 200px;
+		    margin: 0 auto 3px;
+		    overflow: hidden;
+		    margin-bottom: 4px;
+		    text-align: center;
+
+		}
+		.jj_bottom .xtb .bt1{
+			margin-left: 6px;
+			height: 20px;
+		    line-height: 20px;
+		    color: #fff!important;
+		    padding: 0 5px;
+		    background-color: #e36844;
+		    display: inline-block;
+    		font-size: 12px;
+		}
+		.jj_bottom h4{
+			line-height: 20px;
+		    max-height: 40px;
+		    margin: 0 auto 4px;
+		    font-size: 13px;
+		    width: 136px;
+		    text-align: center;
+		    cursor: pointer;
+		}
+		.jj_bottom h4:hover{
+			color: #CC9756;
+		}
+		.jj_bottom p{
+			font-size: 13px;
+		    line-height: 13px;
+		    color: #d4282d;
+		    padding: 1px 0 9px;
+		    margin: 0;
+		    text-align: center;
+		    box-sizing: border-box;
+		}
+		.jj_bottom p span:first-child{
+			position: relative;
+		    top: 1px;
+		    line-height: 13px;
+		    height: 13px;
+		    padding: 0;
+		    display: inline-block;
+		    overflow: hidden;
+		}
+	
+		.content_three .item .jj_bd  ul li .jj .cover{
+			width: 265px;
+			height: 265px;
+		    position: absolute;
+		    margin-bottom: 8px;
+    		
+			cursor: pointer;
+			display: none;
+			left: 0px;
+			top: 0px;
+			
+			z-index: 2;
+		
+		}
+
+		.content_three .item .jj_bd  ul li:hover .cover{
+			/*background-color: pink;*/
+			/*transition: all 3s linear;*/
+			display: block;
+			
+		}
+
+		/*第四块 甄选家*/
+		.content .content_four{
+			height: 428px;
+			position: relative;
+			padding: 60px 0;
+    		background: #f4f0ea;
+			margin-bottom: 80px;
+		}
+		.content .content_four .item{
+			width: 1100px;
+			margin: 0 auto;
+			position: relative;
+			/*background-color: pink;*/
+		}
+		.content_four .item .wrapper .title
+		{
+			margin-bottom: 20px;
+		}
+		.content_four .item .wrapper .title::after
+		{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.content_four .item .wrapper .title>h3
+		{	
+			cursor: pointer;
+			/*display: inline-block;*/
+			font-size: 28px;
+			font-weight: 700;
+			float: left;
+			margin-right: 20px;
+		}
+		.content_four .item .wrapper .title>h3:hover{
+			color: #CC9756;
+		}
+		.content_four .item .wrapper .title>small{
+
+			padding-top: 18px;
+		    display: inline-block;
+		    line-height: 1;
+		    font-size: 14px;
+		}
+		.bd .expert_first{
+			margin-left: 0;
+    		width: 690px;
+    		float: left;
+		}
+		.bd .expert_first img{
+			height: 380px;
+			width: 690px;
+		}
+		.bd .expert_small{
+			width: 390px;
+			float: left;
+    		margin-left: 10px;
+		}
+		.bd .expert_small img{
+			width: 390px;
+    		height: 185px;
+		}
+		.bd .expert_last img{
+			margin-top: 10px;
+			width: 390px;
+			float: left;
+    		margin-left: 10px;
+		}
+		.bd .expert_last img{
+			width: 390px;
+    		height: 185px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="top">
+			<div class="wrapper">
+				<div class="left">
+				<i class="iconfont icon-laba"></i>
+				关于新疆地区部分管控通知</div>
+				<div class="right">
+					<ul>
+						<li><a href="">登录/注册</a></li>
+						<li><a href="">我的订单</a></li>
+						<li><a href="">会员</a></li>
+						<li><a href="">甄选家</a></li>
+						<li>
+							<a href="">企业采购
+								<i class="qiye"></i>
+							</a>
+
+							<!-- <div class="content"> -->
+								<ul>
+									<li>企业购</li>
+									<li>礼品卡</li>
+									<li>联系我们</li>
+								</ul>
+							<!-- </div> -->
+						</li>
+						<li>
+							<a href="">客户服务
+								<i class="qiye"></i>
+							</a>
+							<!-- <div class="content"> -->
+								<ul>
+									<li>在线客服</li>
+									<li>帮助中心</li>
+									<li>商务合作</li>
+									<li>开放平台</li>
+								</ul>
+							<!-- </div> -->
+						</li>
+						<li>
+							
+							<a href=""><div class="phone"></div>APP
+							</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="header_top">
+				<div class="left"></div>
+				<!-- 右侧搜索框+购物车 -->
+				<div class="right">
+					<!-- 右部中的左边搜索框 -->
+					<div>
+						<!-- 搜索框 -->
+						<div  class="search">
+							<i></i>
+							<input type="text" placeholder="舒弹按摩居家拖鞋">
+							<div>搜索</div>
+						</div>
+						<!-- 下边文本 -->
+						<div class="search-text">
+							<a href="">超值美食5折起</a>
+							<a href="">新手首单0元购</a>
+							<a href="">领专属神卷</a>
+							<a href="">口罩专区</a>
+						</div>
+					</div>
+					<!-- 右部中的右边购物车 -->
+					<div class="shopcar">
+						<div></div>
+						<span>购物车</span>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="header_bottom">
+				<div class="daohang">
+				<ul>
+					<li>首页</li>
+					<li>居家生活</li>
+					<li>服饰鞋包</li>
+					<li>美食酒水</li>
+					<li>个护清洁</li>
+					<li>母婴亲子</li>
+					<li>运动旅行</li>
+					<li>数码家电</li>
+					<li>严选全球</li>
+					<li>为你严选</li>
+					<li>众筹</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="image_xianshi">
+			<div class="image"></div>
+		</div>
+		<div class="content">
+			<div class="content_one">
+				<div class="item">
+					<div class="wrapper">
+						<div class="title">
+							<h3>新品首发</h3>
+							<span>为你寻觅世间好物</span>
+							<span><a href="">更多新品&gt;</a></span>
+						</div>
+						<ul class="xinpin">
+							<li>
+								<div class="hd">
+									<a href="#" title="守护你的发际线，黑芝麻丸 100克">
+										<img src="images/xinpin1.webp" alt="守护你的发际线，黑芝麻丸 100克">
+										<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+										<div class="prom" style="background-image: url(images/bg1.png);">
+											<div class="promtitle" style="background-image: url(images/bg2.webp);">
+												<div class="title_sub">
+													<span>新品限时购</span>
+												</div>
+												<div class="subtitle">
+													<span class="yuan" style="vertical-align:middle;">¥29</span>
+													<span class="qi">起</span>
+												</div>
+											</div>
+											<div class="promcontent">限800件 仅剩2天</div>
+										</div>
+
+									</a>
+								</div>
+
+								<div>
+									<span>新品限时购</span>
+								</div>
+								<h4>守护你的发际线，黑芝麻丸 100克</h4>
+								<p>
+									<span>￥29</span>
+									<span>￥39</span>
+								</p>
+							
+								<div class="cover">
+									<a href="#" title="守护你的发际线，黑芝麻丸 100克">
+										<img src="images/xinpin11.webp" class="xinpin11">
+									</a>
+								</div>
+
+							</li>
+							<li>
+								<div class="hd">
+									<a href="#" title="熨衣又快又平整,干湿两用蒸汽电熨斗">
+										<img src="images/xinpin2.webp" alt="熨衣又快又平整,干湿两用蒸汽电熨斗">
+										<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+										<div class="prom" style="background-image: url(images/bg1.png);">
+											<div class="promtitle" style="background-image: url(images/bg2.webp);">
+												<div class="title_sub">
+													<span>新品限时购</span>
+												</div>
+												<div class="subtitle">
+													<span class="yuan" style="vertical-align:middle;">¥79</span>
+													<span class="qi">起</span>
+												</div>
+											</div>
+											<div class="promcontent">限475件 仅剩6天</div>
+										</div>
+									</a>	
+								</div>
+								
+								<div>
+									<span >新品限时购</span>
+								</div>
+								<h4>熨衣又快又平整,干湿两用蒸汽电熨斗</h4>
+								<p>
+									<span>￥79</span>
+									<span>￥89</span>
+								</p>
+								<div class="cover">
+									<a href="#" title="熨衣又快又平整,干湿两用蒸汽电熨斗">
+										<img src="images/xinpin22.webp" class="xinpin22">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="hd">
+									<a href="#" title="让肺呼吸更畅快，润与茶 10克*12袋">
+										<img src="images/xinpin3.webp" alt="让肺呼吸更畅快，润与茶 10克*12袋">
+										<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+										<div class="prom" style="background-image: url(images/bg1.png);">
+											<div class="promtitle" style="background-image: url(images/bg2.webp);">
+												<div class="title_sub">
+													<span>新品限时购</span>
+												</div>
+												<div class="subtitle">
+													<span class="yuan" style="vertical-align:middle;">¥78</span>
+													<span class="qi">起</span>
+												</div>
+											</div>
+											<div class="promcontent">限1000件 仅剩2天</div>
+										</div>
+									</a>
+								</div>
+								
+								<div>
+									<span>新品限时购</span>
+								</div>
+								<h4>让肺呼吸更畅快，润与茶 10克*12袋</h4>
+								<p>
+									<span>￥78</span>
+									<span>￥128</span>
+								</p>
+								<div class="cover">
+									<a href="#" title="让肺呼吸更畅快，润与茶 10克*12袋">
+										<img src="images/xinpin33.webp" class="xinpin33">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="hd">
+									<a href="#" title="春风嘟嘟球肉感飞机杯">
+										<img src="images/xinpin4.webp" alt="春风嘟嘟球肉感飞机杯">
+										<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+										<div class="prom" style="background-image: url(images/bg1.png);">
+											<div class="promtitle" style="background-image: url(images/bg2.webp);">
+												<div class="title_sub">
+													<span>新品限时购</span>
+												</div>
+												<div class="subtitle">
+													<span class="yuan" style="vertical-align:middle;">¥135</span>
+													<span class="qi">起</span>
+												</div>
+											</div>
+											<div class="promcontent">限800件 仅剩1天</div>
+										</div>
+									</a>
+								</div>
+								
+								<div>
+									<span>新品限时购</span>
+								</div>
+								<h4>春风嘟嘟球肉感飞机杯</h4>
+								<p>
+									<span>￥135</span>
+									<span>￥169</span>
+								</p>
+								<div class="cover">
+									<a href="#" title="春风嘟嘟球肉感飞机杯">
+										<img src="images/xinpin44.webp" class="xinpin44">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content_two">
+				<div class="item">
+					<div class="wrapper">
+						<div class="title">
+							<h3>人气推荐</h3>
+							<div class="renqi">
+								<ul >
+									<li>编辑推荐</li>
+									<li>热销总榜</li>
+								</ul>
+							</div>
+							<span><a href="">更多推荐&gt;</a></span>
+						</div>
+						<div class="renqituijian">
+							<div class="kouzhao">
+								<div class="kouzhaozhao">
+									<a href="#" title="【限量抢购中】一次性医用级三层口罩">
+										<div class="kz_image">
+											<img src="images/tj1.webp" alt="【限量抢购中】一次性医用级三层口罩">
+										</div>
+										<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+										<div class="prom" style="background-image: url(images/bg1.png);">
+											<div class="promtitle" style="background-image: url(images/bg2.webp);">
+												<div class="title_sub">
+													<span>新人特价</span>
+												</div>
+												<div class="subtitle">
+													<span class="yuan" style="vertical-align:middle;">¥20</span>
+													<span class="qi">起</span>
+												</div>
+											</div>
+											<div class="promcontent">正在抢购中</div>
+										</div>
+									</a>
+								</div>
+								<div class="kouzhaozhao_bottom">
+									<div class="xtb">
+										<span class="bt1">浙江制造</span>
+										<span class="bt2">新人特价</span>
+									</div>
+									<h4>【限量抢购中】一次性医用级三层口罩</h4>
+									<p>
+										<span>￥20</span>
+										<span>￥139</span>
+									</p>
+								</div>
+							</div>
+							<div class="row_one">
+								<ul>
+									<li>
+										<div class="row_one_hd">
+											<a href="#" title="告别啃食尴尬，秘制无骨凤爪 108克">
+												<div class="li_image">
+													<img src="images/li1.webp" alt="告别啃食尴尬，秘制无骨凤爪 108克">
+												</div>
+												<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+												<div class="prom" style="background-image: url(images/bg1.png);">
+													<div class="promtitle" style="background-image: url(images/bg2.webp);">
+														<div class="title_sub">
+															<span>新人特价</span>
+														</div>
+														<div class="subtitle">
+															<span class="yuan" style="vertical-align:middle;">¥13</span>
+															<span class="qi">起</span>
+														</div>
+													</div>
+													<div class="promcontent">正在抢购中</div>
+												</div>
+											</a>
+										</div>
+										<div class="row_one_bd">
+											<div class="xtb">
+												<span class="bt2">新人特价</span>
+											</div>
+											<h4>告别啃食尴尬，秘制无骨凤爪 108克</h4>
+											<p>
+												<span>￥13</span>
+												<span>￥22</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="row_one_hd">
+											<a href="#" title="轻弹云朵居家拖鞋">
+												<div class="li_image">
+													<img src="images/li2.webp" alt="轻弹云朵居家拖鞋">
+												</div>
+												<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+												<div class="prom" style="background-image: url(images/bg1.png);">
+													<div class="promtitle" style="background-image: url(images/bg2.webp);">
+														<div class="title_sub">
+															<span>新人特价</span>
+														</div>
+														<div class="subtitle">
+															<span class="yuan" style="vertical-align:middle;">¥9.9</span>
+															<span class="qi">起</span>
+														</div>
+													</div>
+													<div class="promcontent">正在抢购中</div>
+												</div>
+											</a>
+										</div>
+										<div class="row_one_bd">
+											
+											<h4>轻弹云朵居家拖鞋</h4>
+											<p>
+												<span style="color: red;font-size: 13px;text-decoration: none;">￥9.9</span>
+												
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="row_one_hd">
+											<a href="#" title="无添加蔗糖，苏打饼干 360克">
+												<div class="li_image">
+													<img src="images/li3.webp" alt="无添加蔗糖，苏打饼干 360克">
+												</div>
+												<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+												<div class="prom" style="background-image: url(images/bg1.png);">
+													<div class="promtitle" style="background-image: url(images/bg2.webp);">
+														<div class="title_sub">
+															<span>新人特价</span>
+														</div>
+														<div class="subtitle">
+															<span class="yuan" style="vertical-align:middle;">¥9.9</span>
+															<span class="qi">起</span>
+														</div>
+													</div>
+													<div class="promcontent">正在抢购中</div>
+												</div>
+											</a>
+										</div>
+										<div class="row_one_bd">
+											<div class="xtb">
+												<span class="bt2">新人特价</span>
+											</div>
+											<h4>无添加蔗糖，苏打饼干 360克</h4>
+											<p>
+												<span>￥9.9</span>
+												<span>￥12.8</span>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="row_two">
+								<ul>
+									<li>
+										<div class="row_one_hd">
+											<a href="#" title="肉香满满，火腿猪肉罐头 198克*6">
+												<div class="li_image">
+													<img src="images/li4.webp" alt="肉香满满，火腿猪肉罐头 198克*6">
+												</div>
+												<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+												<div class="prom" style="background-image: url(images/bg1.png);">
+													<div class="promtitle" style="background-image: url(images/bg2.webp);">
+														<div class="title_sub">
+															<span>可用券</span>
+														</div>
+														<div class="subtitle">
+															<span class="yuan" style="vertical-align:middle;">8.6-8.8</span>
+															<span class="qi">起</span>
+														</div>
+													</div>
+													<div class="promcontent">每满300-45 每满150减20</div>
+												</div>
+											</a>
+										</div>
+										<div class="row_one_bd">
+											<div class="xtb">
+												<span class="bt2">每满300减45券</span>
+											</div>
+											<h4>肉香满满，火腿猪肉罐头 198克*6</h4>
+											<p>
+												<span style="color: red;font-size: 13px;text-decoration: none;">￥129</span>
+												
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="row_one_hd">
+											<a href="#" title="全价猫粮 1.8千克">
+												<div class="li_image">
+													<img src="images/li5.webp" alt="全价猫粮 1.8千克">
+												</div>
+												<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+												<div class="prom" style="background-image: url(images/bg1.png);">
+													<div class="promtitle" style="background-image: url(images/bg2.webp);">
+														<div class="title_sub">
+															<span>限时购</span>
+														</div>
+														<div class="subtitle">
+															<span class="yuan" style="vertical-align:middle;">¥78</span>
+															<span class="qi">起</span>
+														</div>
+													</div>
+													<div class="promcontent">限5600件 仅剩2天</div>
+												</div>
+											</a>
+										</div>
+										<div class="row_one_bd">
+											<div class="xtb">
+												<span class="bt2">限时购</span>
+											</div>
+											<h4>全价猫粮 1.8千克</h4>
+											<p>
+												<span>￥78</span>
+												<span>￥88</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="row_one_hd">
+											<a href="#" title="口袋里的咖啡馆 日本浓缩胶囊咖啡液8颗装">
+												<div class="li_image">
+													<img src="images/li6.webp" alt="口袋里的咖啡馆 日本浓缩胶囊咖啡液8颗装">
+												</div>
+												<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+												<div class="prom" style="background-image: url(images/bg1.png);">
+													<div class="promtitle" style="background-image: url(images/bg2.webp);">
+														<div class="title_sub">
+															<span>可用券</span>
+														</div>
+														<div class="subtitle">
+															<span class="yuan" style="vertical-align:middle;">8.6-8.8</span>
+															<span class="qi">起</span>
+														</div>
+													</div>
+													<div class="promcontent">每满300-45 每满150减20</div>
+												</div>
+											</a>
+										</div>
+										<div class="row_one_bd">
+											<div class="xtb">
+												<span class="bt2">每满300减45券</span>
+											</div>
+											<h4>口袋里的咖啡馆 日本浓缩胶囊咖啡液8颗装</h4>
+											<p>
+												<span style="color: red;font-size: 13px;text-decoration: none;">￥21.8</span>
+												
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="content_three">
+				<div class="item">
+					<div class="wrapper">
+						<div class="title">
+							<h3>居家生活</h3>
+							<div class="right">
+								<div class="sublist">
+									<span>
+										<a href="#">口碑好物</a>
+									</span>
+									<span>
+										<b>/</b>
+										<a href="#">主题床品</a>
+									</span>
+									<span>
+										<b>/</b>
+										<a href="#">抑菌防螨</a>
+									</span>
+									<span>
+										<b>/</b>
+										<a href="#">春夏好物</a>
+									</span>
+									<span>
+										<b>/</b>
+										<a href="#">北欧原木</a>
+									</span>
+									<span>
+										<b>/</b>
+										<a href="#">餐厨爆款清单</a>
+									</span>
+									<span>
+										<b>/</b>
+										<a href="#">床品件套</a>
+									</span>
+								</div>
+								<a href="#" class="title_right">查看更多&gt;</a>
+							</div>
+						</div>
+						<div class="content_image">
+							<a href="#">
+								<img src="images/jj.webp" > 
+							</a>
+						</div>
+						<div class="jj_bd">
+							<ul>
+								<li>
+									<div class="jj">
+										<div class="jj_top">
+											<a href="#" title="耐热玻璃把手杯 防滑带杯盖 会变色的小胖喵">
+												<img src="images/jjsh1.webp" alt="耐热玻璃把手杯 防滑带杯盖 会变色的小胖喵">
+												<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+												<div class="prom" style="background-image: url(images/bg1.png);">
+													<div class="promtitle" style="background-image: url(images/bg2.webp);">
+														<div class="title_sub">
+															<span>可用券</span>
+														</div>
+														<div class="subtitle">
+															<span class="yuan" style="vertical-align:middle;">8.6-8.8</span>
+															<span class="qi">起</span>
+														</div>
+													</div>
+													<div class="promcontent">每满300-45 每满150减20</div>
+												</div>
+											</a>
+										</div>
+										<div class="jj_bottom">
+											<div class="xtb">
+												<span class="bt1">每满300减45券</span>
+											</div>
+											<h4>耐热玻璃把手杯 防滑带杯盖 会变色的小胖喵</h4>
+											<p>
+												<span>￥49</span>
+											</p>
+										</div>
+										<div class="cover">
+											<a href="#" title="耐热玻璃把手杯 防滑带杯盖 会变色的小胖喵">
+												<img src="images/jjsh11.webp" class="jjsh11">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="jj">
+										<div class="jj_top">
+											<a href="#" title="AB面乳胶独立弹簧床垫 升级款">
+												<img src="images/jjsh2.webp" alt="AB面乳胶独立弹簧床垫 升级款">
+												<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+												<div class="prom" style="background-image: url(images/bg1.png);">
+													<div class="promtitle" style="background-image: url(images/bg2.webp);">
+														<div class="title_sub">
+															<span>可用券</span>
+														</div>
+														<div class="subtitle">
+															<span class="yuan" style="vertical-align:middle;">8.6-8.8</span>
+															<span class="qi">起</span>
+														</div>
+													</div>
+													<div class="promcontent">每满300-45 每满150减20</div>
+												</div>
+											</a>
+										</div>
+										<div class="jj_bottom">
+											<div class="xtb">
+												<span class="bt1">每满300减45券</span>
+											</div>
+											<h4>AB面乳胶独立弹簧床垫 升级款</h4>
+											<p>
+												<span>￥2599</span>
+											</p>
+										</div>
+										<div class="cover">
+											<a href="#" title="AB面乳胶独立弹簧床垫 升级款">
+												<img src="images/jjsh22.webp" class="jjsh22">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="jj">
+										<div class="jj_top">
+											<a href="#" title="烹饪样样精通 珠光黄铸铁珐琅锅22cm">
+												<img src="images/jjsh3.webp" alt="烹饪样样精通 珠光黄铸铁珐琅锅22cm">
+												<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+												<div class="prom" style="background-image: url(images/bg1.png);">
+													<div class="promtitle" style="background-image: url(images/bg2.webp);">
+														<div class="title_sub">
+															<span>限时购</span>
+														</div>
+														<div class="subtitle">
+															<span class="yuan" style="vertical-align:middle;">￥209</span>
+															<span class="qi">起</span>
+														</div>
+													</div>
+													<div class="promcontent">8月8日 22点开抢</div>
+												</div>
+											</a>
+										</div>
+										<div class="jj_bottom">
+											<div class="xtb">
+												<span class="bt1">每满150减20券</span>
+											</div>
+											<h4>烹饪样样精通 珠光黄铸铁珐琅锅22cm</h4>
+											<p>
+												<span>￥288</span>
+											</p>
+										</div>
+										<div class="cover">
+											<a href="#" title="烹饪样样精通 珠光黄铸铁珐琅锅22cm">
+												<img src="images/jjsh33.webp" class="jjsh33">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="jj">
+										<div class="jj_top">
+											<a href="#" title="日式全棉格纹四件套 新款">
+												<img src="images/jjsh4.webp" alt="日式全棉格纹四件套 新款">
+												<img class="promoLogo" style="width:48px;height:48px;" src="http://yanxuan.nosdn.127.net/40ad31f188d80cd4c8b92a4d4a410aa3.apk" data-reactid=".2.2.1.0.0.$0.0.0.2">
+												<div class="prom" style="background-image: url(images/bg1.png);">
+													<div class="promtitle" style="background-image: url(images/bg2.webp);">
+														<div class="title_sub">
+															<span>限时购/span>
+														</div>
+														<div class="subtitle">
+															<span class="yuan" style="vertical-align:middle;">8.6-8.8</span>
+															<span class="qi">起</span>
+														</div>
+													</div>
+													<div class="promcontent">限400件 仅剩22小时</div>
+												</div>
+											</a>
+										</div>
+										<div class="jj_bottom">
+											<div class="xtb">
+												<span class="bt1">限时购</span>
+											</div>
+											<h4>日式全棉格纹四件套新款</h4>
+											<p>
+												<span>￥239</span>
+											</p>
+										</div>
+										<div class="cover">
+											<a href="#" title="日式全棉格纹四件套 新款">
+												<img src="images/jjsh44.webp" class="jjsh44">
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="content_four">
+				<div class="item">
+					<div class="wrapper">
+						<div class="title">
+							<h3>甄选家</h3>
+							<small>我们在寻找，对生活有态度的你</small>
+						</div>
+						<div class="bd">
+							<div class="expertContent">
+								<a href="#" class="expert_first">
+									<div>
+										<img src="images/zxj1.webp" alt="">
+									</div>
+								</a>
+								<a href="#" class="expert_small">
+									<div>
+										<img src="images/zxj2.webp" alt="">
+									</div>
+								</a>
+								<a href="#" class="expert_last">
+									<div>
+										<img src="images/zxj3.webp" alt="">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_top">
+				<div class="wrapper">
+					<div class="left">
+						<div>
+							<h4>客户服务</h4>
+							<a class="left-1">
+								<i></i>
+								<div>在线客服</div>
+							</a>
+							<a class="left-2">
+								<i></i>
+								<div>用户反馈</div>
+							</a>
+						</div>
+					</div>
+					<div class="middle">
+						<div class="middle-top">
+							<h4>何为严选</h4>
+							<p>网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+						</div>
+						<div class="middle-bottom">
+							<p>关注我们：</p>
+							<div>
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div>
+							<h4>扫码下载严选APP</h4>
+							<div class="ma">
+								<i></i>
+							</div>
+							<div>下载领大额新人红包</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<div class="wrapper">
+					<ul class="logo">
+						<li>
+							<div>
+								<i></i>
+								<p>网易自营电商</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<i></i>
+								<p>30天无忧退换货</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<i></i>
+								<p>满99元免邮费</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<i></i>
+								<p>品质保证</p>
+							</div>
+						</li>
+					</ul>
+					<div class="hr"></div>
+					<div class="miaoshu">
+						<div>
+							<a href="">关于我们</a>
+							<b>|</b>
+							<a href="">帮助中心</a>
+							<b>|</b>
+							<a href="">售后服务</a>
+							<b>|</b>
+							<a href="">配送与验收</a>
+							<b>|</b>
+							<a href="">商务合作</a>
+							<b>|</b>
+							<a href="">企业采购</a>
+							<b>|</b>
+							<a href="">开放平台</a>
+							<b>|</b>
+							<a href="">搜索推荐</a>
+							<b>|</b>
+							<a href="">友情链接</a>
+							<b>|</b>
+							<a href="">廉政举报</a>
+						</div>
+						<p>
+							<a href="">食品经营许可证：JY13301080111719</a>
+							<a href="">出版物经营许可证：新出发滨字第0132号</a>
+							<a href="">妙得ICP证号：ICP 证浙B2-20160106</a>
+							<a href="">浙杭食药监械经营备20171029号</a>
+							<a href="">营业执照</a>
+							<a href="">网易公司版权所有 © 1997-2020</a>
+						</p>
+						<p>
+							<a href="">无线电发射设备销售备案：42202011096855</a>
+							<a href="">（浙杭）网械企备字[2019]第00119号</a>
+							<a href="">(粤）网械平台备字（2019）第00004号</a>
+							<a href="">（粤）-非经营性-2016-0023</a>
+						</p>
+						<p>
+							<a href="">浙江省网络食品销售第三方平台提供者备案：浙网食A33010009</a>
+							<a href="">单用途商业预付卡备案证：330100AAC0024</a>
+							<img src="./images/666.gif" >
+						</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
